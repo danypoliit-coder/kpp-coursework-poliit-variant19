@@ -1,39 +1,125 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-.kotlin
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+# ==============================
+# MAVEN / BUILD
+# ==============================
+
+target/
+**/target/
+
+build/
+**/build/
+
+*.war
+*.ear
+*.class
+
+# Maven Wrapper
+!.mvn/wrapper/maven-wrapper.jar
+
+# Kotlin
+.kotlin/
+
+# ==============================
+# LOGS
+# ==============================
+
+logs/
+**/logs/
+
+*.log
+*.log.*
+*.lck
+
+# ==============================
+# LOCAL SECRETS
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+*.secret
+*.secrets
+
+secrets/
+**/secrets/
+
+# Local configuration files with credentials
+application-local.properties
+application-local.yml
+application-local.yaml
+
+# ==============================
+# INTELLIJ IDEA
+# ==============================
+
+.idea/
 *.iws
 *.iml
 *.ipr
+out/
 
-### Eclipse ###
-.apt_generated
+# ==============================
+# ECLIPSE
+# ==============================
+
+.apt_generated/
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
-.sts4-cache
+.sts4-cache/
 
-### NetBeans ###
+# ==============================
+# NETBEANS
+# ==============================
+
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# ==============================
+# VS CODE
+# ==============================
+
 .vscode/
 
-### Mac OS ###
+# ==============================
+# OPERATING SYSTEM
+# ==============================
+
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# TEMPORARY FILES
+# ==============================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ==============================
+# DATABASE BACKUPS
+# ==============================
+
+*.sql.bak
+*.sql.gz
+
+# ==============================
+# KEEP PROJECT SOURCES
+# ==============================
+
+# Do not ignore:
+# server/src/
+# client/src/
+# sample-data/
+# database.sql
+# README.md
+# pom.xml

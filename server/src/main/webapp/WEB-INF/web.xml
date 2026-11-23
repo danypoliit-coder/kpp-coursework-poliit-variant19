@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="
+         http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <display-name>Greenery Care Server</display-name>
+
+    <servlet>
+        <servlet-name>TreeServlet</servlet-name>
+        <servlet-class>ua.edu.nupp.kpp.server.servlet.TreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TreeServlet</servlet-name>
+        <url-pattern>/api/trees</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InspectionServlet</servlet-name>
+        <servlet-class>ua.edu.nupp.kpp.server.servlet.InspectionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InspectionServlet</servlet-name>
+        <url-pattern>/api/inspections</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WorkRequestServlet</servlet-name>
+        <servlet-class>ua.edu.nupp.kpp.server.servlet.WorkRequestServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WorkRequestServlet</servlet-name>
+        <url-pattern>/api/requests</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WorkOrderServlet</servlet-name>
+        <servlet-class>ua.edu.nupp.kpp.server.servlet.WorkOrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WorkOrderServlet</servlet-name>
+        <url-pattern>/api/orders</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+</web-app>

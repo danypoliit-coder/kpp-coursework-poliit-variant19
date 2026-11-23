@@ -1,4 +1,3 @@
-
 DROP DATABASE IF EXISTS greenery_care;
 
 CREATE DATABASE greenery_care

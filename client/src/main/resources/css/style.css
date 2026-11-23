@@ -1,0 +1,496 @@
+
+/* =====================================
+   GREENERY CARE — DARK GREEN THEME
+   ===================================== */
+
+/* Основной фон */
+
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 13px;
+    -fx-base: #172820;
+    -fx-background: #101b17;
+    -fx-background-color: #101b17;
+    -fx-control-inner-background: #1c3027;
+    -fx-accent: #4ade80;
+    -fx-focus-color: #4ade80;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Заголовок приложения */
+
+.app-header {
+    -fx-background-color: #16271e;
+    -fx-padding: 22px;
+    -fx-border-color: #294536;
+    -fx-border-width: 0 0 1 0;
+}
+
+.app-title {
+    -fx-text-fill: #e9f7ee;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+/* Основные вкладки */
+
+.tab-pane {
+    -fx-background-color: #101b17;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #16271e;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #20372a;
+    -fx-background-radius: 8 8 0 0;
+    -fx-padding: 8px 18px;
+}
+
+.tab-pane .tab:hover {
+    -fx-background-color: #2c4b38;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #356e4a;
+}
+
+.tab-pane .tab-label {
+    -fx-text-fill: #c7dfce;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: white;
+}
+
+.tab-pane .tab-content-area {
+    -fx-background-color: #101b17;
+}
+
+/* Таблицы */
+
+.table-view {
+    -fx-background-color: #1b2b23;
+    -fx-border-color: #31513e;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 2px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #284734;
+}
+
+.table-view .column-header {
+    -fx-background-color: #284734;
+    -fx-border-color: #365843;
+    -fx-padding: 10px 5px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #e7f7eb;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: #1b2b23;
+    -fx-table-cell-border-color: #304437;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #21362a;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #30513a;
+}
+
+.table-row-cell:selected,
+.table-row-cell:odd:selected {
+    -fx-background-color: #377a50;
+}
+
+.table-cell {
+    -fx-text-fill: #e2f2e7;
+    -fx-padding: 10px 8px;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: white;
+}
+
+.table-view .placeholder .label {
+    -fx-text-fill: #a9c7b1;
+}
+
+/* Кнопки */
+
+.button {
+    -fx-background-color: #2e6945;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-padding: 10px 16px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #398455;
+}
+
+.button:pressed {
+    -fx-background-color: #245238;
+}
+
+.button:disabled {
+    -fx-opacity: 0.5;
+}
+
+/* Специальные типы кнопок */
+
+.button-danger {
+    -fx-background-color: #963e43;
+}
+
+.button-danger:hover {
+    -fx-background-color: #b84b51;
+}
+
+.button-secondary {
+    -fx-background-color: #365047;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #476b5c;
+}
+
+.button-primary {
+    -fx-background-color: #218b53;
+}
+
+.button-primary:hover {
+    -fx-background-color: #2cab69;
+}
+
+/* Поля ввода */
+
+.text-field,
+.text-area,
+.combo-box,
+.date-picker {
+    -fx-background-color: #20372b;
+    -fx-text-fill: #f0fff4;
+    -fx-border-color: #456b50;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+}
+
+.text-field {
+    -fx-padding: 9px;
+}
+
+.text-field:focused,
+.text-area:focused,
+.combo-box:focused,
+.date-picker:focused {
+    -fx-border-color: #4ade80;
+}
+
+.text-area .content {
+    -fx-background-color: #20372b;
+}
+
+.text-area {
+    -fx-text-fill: #f0fff4;
+}
+
+.date-picker .text-field {
+    -fx-background-color: #20372b;
+    -fx-text-fill: #f0fff4;
+}
+
+/* CSV Import */
+
+.import-panel {
+    -fx-background-color: #192d22;
+    -fx-border-color: #345a41;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 16px;
+    -fx-spacing: 10px;
+}
+
+.import-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #b6f5ca;
+}
+
+.progress-bar {
+    -fx-accent: #4ade80;
+}
+
+.progress-bar .track {
+    -fx-background-color: #314b3a;
+    -fx-background-radius: 8px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #4ade80;
+    -fx-background-radius: 8px;
+    -fx-background-insets: 0;
+    -fx-padding: 6px;
+}
+
+/* Строка состояния */
+
+.status-bar {
+    -fx-background-color: #16271e;
+    -fx-text-fill: #a8d9b8;
+    -fx-padding: 12px;
+    -fx-border-color: #2b4936;
+    -fx-border-width: 1 0 0 0;
+}
+
+/* Текст */
+
+.label {
+    -fx-text-fill: #dcefe2;
+}
+
+/* Диалоговые окна */
+
+.dialog-pane {
+    -fx-background-color: #192a20;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #294b36;
+}
+
+.dialog-pane .content.label {
+    -fx-text-fill: #e7f7eb;
+}
+
+/* Полосы прокрутки */
+
+.scroll-bar {
+    -fx-background-color: #18291f;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #466b50;
+    -fx-background-radius: 8px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #5c8c68;
+}
+
+/* =====================================
+   GREENERY CARE — UI IMPROVEMENTS
+   ===================================== */
+
+/* Таблицы */
+
+.table-view .column-header .label {
+    -fx-alignment: CENTER_LEFT;
+    -fx-text-overrun: ELLIPSIS;
+}
+
+.table-view .table-cell {
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-view:focused {
+    -fx-border-color: #4ade80;
+}
+
+/* Цветные статусы заявок */
+
+.status-badge {
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 12px;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.status-created {
+    -fx-background-color: #394b47;
+    -fx-text-fill: #e2e8e5;
+}
+
+.status-checked {
+    -fx-background-color: #214f69;
+    -fx-text-fill: #a9e2ff;
+}
+
+.status-planned {
+    -fx-background-color: #665022;
+    -fx-text-fill: #ffe1a0;
+}
+
+.status-completed {
+    -fx-background-color: #205d3b;
+    -fx-text-fill: #b7f7ca;
+}
+
+/* Диалоговые окна */
+
+.greenery-dialog {
+    -fx-background-color: #192a20;
+    -fx-padding: 12px;
+}
+
+.greenery-dialog .label {
+    -fx-text-fill: #e4f5e9;
+}
+
+.greenery-dialog .header-panel {
+    -fx-background-color: #294b36;
+    -fx-padding: 16px;
+}
+
+.greenery-dialog .header-panel .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.greenery-dialog .button-bar {
+    -fx-padding: 12px;
+}
+
+.greenery-dialog .button {
+    -fx-min-width: 90px;
+}
+
+.greenery-dialog .text-field,
+.greenery-dialog .text-area,
+.greenery-dialog .date-picker {
+    -fx-pref-width: 280px;
+}
+
+/* Улучшение календаря */
+
+.date-picker-popup {
+    -fx-background-color: #20372b;
+    -fx-border-color: #456b50;
+}
+
+.date-picker-popup .month-year-pane {
+    -fx-background-color: #294b36;
+}
+
+.date-picker-popup .day-cell {
+    -fx-background-color: #20372b;
+    -fx-text-fill: #e4f5e9;
+}
+
+.date-picker-popup .day-cell:hover {
+    -fx-background-color: #377a50;
+}
+
+.date-picker-popup .selected {
+    -fx-background-color: #218b53;
+    -fx-text-fill: white;
+}
+
+/* =====================================
+   GREENERY CARE — SEARCH & DASHBOARD
+   ===================================== */
+
+.app-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #a8cbb4;
+}
+
+.dashboard-counters {
+    -fx-background-color: #101b17;
+}
+
+.counter-card {
+    -fx-background-color: #1c3326;
+    -fx-border-color: #345a41;
+    -fx-border-radius: 9px;
+    -fx-background-radius: 9px;
+    -fx-padding: 15px 20px;
+    -fx-min-height: 60px;
+}
+
+.counter-value {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #b7f7ca;
+}
+
+.filter-bar {
+    -fx-background-color: #192d22;
+    -fx-border-color: #345a41;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px;
+}
+
+.filter-bar .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #dcefe2;
+}
+
+.filter-bar .text-field {
+    -fx-background-color: #20372b;
+    -fx-text-fill: #f0fff4;
+    -fx-prompt-text-fill: #9eb5a5;
+    -fx-border-color: #456b50;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+}
+
+.filter-bar .combo-box {
+    -fx-background-color: #20372b;
+    -fx-border-color: #456b50;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-min-width: 180px;
+}
+
+.filter-bar .combo-box .list-cell {
+    -fx-text-fill: #e4f5e9;
+    -fx-background-color: #20372b;
+}
+
+.filter-bar .combo-box-popup .list-view {
+    -fx-background-color: #20372b;
+}
+
+.filter-bar .combo-box-popup .list-cell:hover {
+    -fx-background-color: #377a50;
+}
+
+/* =====================================
+   FILTER IMPROVEMENTS
+   ===================================== */
+
+.filter-count {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #b7f7ca;
+    -fx-padding: 0 8px;
+}
+
+.filter-bar .button {
+    -fx-background-radius: 6px;
+    -fx-padding: 9px 14px;
+}
+
+.filter-bar .button:hover {
+    -fx-opacity: 0.85;
+}
+
+.filter-bar .text-field:focused {
+    -fx-border-color: #4ade80;
+    -fx-border-width: 1.5px;
+}
